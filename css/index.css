@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+#wrapper #home-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #040404;
+}
+
+#wrapper #home-page #sidebar {
+  width: 50px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #066db1;
+}
+
+#wrapper #home-page #sidebar #icon li {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+#wrapper #home-page #sidebar #icon li a {
+  color: #fff;
+}
+
+#wrapper #home-page #homesec {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url("hback.jpg");
+  background-position: contain;
+  background-repeat: no-repeat;
+}
+
+#wrapper #home-page #homesec #nav {
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+  margin-top: -3rem;
+}
+
+#wrapper #home-page #homesec #nav #top-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+#wrapper #home-page #homesec #nav #top-nav #logo {
+  margin-left: 3rem;
+  margin-right: 7rem;
+  flex: 5;
+  font-size: 3.5rem;
+  font-family: monospace;
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+#wrapper #home-page #homesec #nav #top-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#wrapper #home-page #homesec #nav #top-nav .item {
+  flex: auto;
+  margin-top: 0.9rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#wrapper #home-page #homesec #nav #top-nav .item:hover {
+  border-bottom: 3px solid #fff;
+}
+
+#wrapper #home-page #homesec #nav #top-nav #logo:hover {
+  border: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  #wrapper #home-page #homesec #nav {
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+    margin-top: -16rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #wrapper #home-page #homesec #sidebar {
+    width: 50px;
+    height: 30px;
+    background: #066db1;
+  }
+  #wrapper #home-page #homesec #nav {
+    display: none;
+  }
+}
+
+#wrapper #home-page #intro {
+  width: 500px;
+  height: 300px;
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+#wrapper #home-page #intro h1 {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+#wrapper #home-page #intro h2 {
+  margin-top: -1.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 3.1rem;
+}
+
+#wrapper #home-page #intro h3 {
+  margin-top: -2rem;
+  color: #fff;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+#wrapper #home-page #intro #aboutme {
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  background: black;
+  border: 1px solid #066db1;
+  cursor: pointer;
+}
+
+#wrapper #home-page #intro #aboutme:focus {
+  outline: none;
+}
+
+#wrapper #home-page #intro #aboutme:hover {
+  background: #066db1;
+  transform: scale(1.1);
+  transition: all 1s linear;
+}
